@@ -8,7 +8,18 @@ export const TextInputContainer = styled('div', {
   // Já deixa a borda pre setada, para quando fizer o focus trocar a cor, e além disso não aumentar o trabalho.
   border: '2px solid $gray900',
   display: 'flex',
-  alignItems: 'baseline', // alinha com base no texto, na linha de baixo do texto
+  alignItems: 'center', // baseline alinha com base no texto, na linha de baixo do texto
+
+  variants: {
+    size: {
+      sm: {
+        padding: '$2 $3',
+      },
+      md: {
+        padding: '$3 $4',
+      },
+    },
+  },
 
   '&:has(input:focus)': {
     // Quando input tem o focus, aplica no TextInputContainero borderColor.
@@ -18,6 +29,10 @@ export const TextInputContainer = styled('div', {
   '&:has(input:disabled)': {
     opacity: 0.5,
     cursor: 'not-allowed',
+  },
+
+  defaultVariants: {
+    size: 'md',
   },
 })
 
@@ -45,7 +60,7 @@ export const Input = styled('input', {
     cursor: 'not-allowed',
   },
 
-  '&:placeholder': {
+  '&::placeholder': {
     color: '$gray400',
   },
 })
