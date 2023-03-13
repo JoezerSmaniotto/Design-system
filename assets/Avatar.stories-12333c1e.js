@@ -1,0 +1,2 @@
+import{A as t}from"./index-ba1d31a7.js";import"./index-78972a5e.js";import"./iframe-1f42fe6f.js";import"./index-4b83f6a3.js";import"./jsx-runtime-67f68b54.js";const e={title:"Data display/Avatar",component:t,args:{src:"https://github.com/JoezerSmaniotto.png",alt:"Joezer Smaniotto"},argTypes:{src:{control:{type:"text"}}}},m={},p={args:{src:void 0}},c=["Primary","WithFallback"];export{m as Primary,p as WithFallback,c as __namedExportsOrder,e as default};
+//# sourceMappingURL=Avatar.stories-12333c1e.js.map
